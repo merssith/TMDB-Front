@@ -98,9 +98,9 @@ You must meet the following pre-requisites to be able to use this project
 
 - [ ] Features for all users
   - [ ] Sign up
-  - [ ] Login/Logout
-  - [ ] Session persistence
-  - [ ] My User profile
+  - [x] Login/Logout
+  - [x] Session persistence
+  - [x] My User profile
   - [ ] User's profile
   - [ ] Search Movie
   - [ ] Search TV Show
@@ -108,8 +108,8 @@ You must meet the following pre-requisites to be able to use this project
   - [ ] Favorites list: Create, Share, Delete
   - [ ] Movie details
   - [ ] TV Show details
-  - [ ] Movie Genres
-  - [ ] TV Show Genres
+  - [x] Movie Genres
+  - [x] TV Show Genres
 - [ ] Admin features
   - [ ] Delete users
   - [ ] Change roles
