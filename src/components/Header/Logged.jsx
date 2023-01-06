@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { setUser } from "../store/users";
+import { setUser } from "../../store/users";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 
@@ -26,7 +26,7 @@ const Logged = () => {
 
   return (
     <div>
-      <p>Hi {user.name}, Welcome to TMDB by Mechi</p>
+      <p>Hi {user.name}</p>
       <a href="/myprofile">MY PROFILE</a>
       <form>
         <input type="submit" onClick={handleLogOut} value="Logout" />

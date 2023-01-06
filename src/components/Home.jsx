@@ -23,9 +23,9 @@ const Home = () => {
 
   return (
     <div>
-      <p>Movies</p>
+      <p>Top Movies</p>
       <Grid content={movies} type="Movie" />
-      <p>TV Shows</p>
+      <p>Top TV Shows</p>
       <Grid content={tvShows} type="TvShow" />
     </div>
   );
