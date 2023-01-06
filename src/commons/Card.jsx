@@ -11,7 +11,6 @@ const Card = ({ data, type }) => {
       <p> {data.title} </p>
       <p> {data.overview} </p>
       <p> {data.vote_average} </p>
-      <p> {data.original_language} </p>
       <div>
         {data.genre
           ? data.genre.map((genre) => (
