@@ -15,14 +15,17 @@ const Profile = () => {
       </p>
       <p>My username: {user.userName}</p>
       <p>My email: {user.email}</p>
-      <p>My age: {user.age} years old</p>
+      <p>
+        My age:
+        {user.age ? user.age + " years old" : " Unknown"}
+      </p>
       <p>
         My movies preferences:
         {user.moviePreferences
           ? user.moviePreferences.map((moviePreference) => (
               <li>{moviePreference.name}</li>
             ))
-          : ""}
+          : " You haven't set your preferences yet"}
       </p>
       <p>
         My TV preferences:
@@ -30,7 +33,7 @@ const Profile = () => {
           ? user.tvPreferences.map((tvPreference) => (
               <li>{tvPreference.name}</li>
             ))
-          : ""}
+          : " You haven't set your preferences yet"}
       </p>
       <p>My Access: {user.role}</p>
       <p>EDIT</p>
