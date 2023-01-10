@@ -5,7 +5,11 @@ const Grid = ({ content, type }) => {
   return (
     <div>
       {content
-        ? content.map((content) => <Card data={content} type={type} />)
+        ? content.map((content) => (
+            <div key={content.id}>
+              <Card data={content} type={type} />
+            </div>
+          ))
         : ""}
     </div>
   );
