@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
+import SearchResult from "./components/SearchResult";
 
 import { setMovieGenres } from "./store/movieGenres";
 import { setTvShowGenres } from "./store/tvShowGenres";
@@ -57,6 +58,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         {/* Logged user routes   */}
         <Route path="/myprofile" element={<Profile />} />
+        <Route path="/searchResults" element={<SearchResult />} />
       </Routes>
       <Footer />
     </div>
