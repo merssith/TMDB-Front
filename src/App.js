@@ -46,14 +46,7 @@ function App() {
       <SideBar />
       <Routes>
         {/* Public routes   */}
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-            </>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         {/* Logged user routes   */}

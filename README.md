@@ -97,13 +97,13 @@ You must meet the following pre-requisites to be able to use this project
 ## Roadmap
 
 - [ ] Features for all users
-  - [ ] Sign up
+  - [x] Sign up
   - [x] Login/Logout
   - [x] Session persistence
   - [x] My User profile
   - [ ] User's profile
-  - [ ] Search Movie
-  - [ ] Search TV Show
+  - [x] Search Movie
+  - [x] Search TV Show
   - [ ] Search User
   - [ ] Favorites list: Create, Share, Delete
   - [ ] Movie details
