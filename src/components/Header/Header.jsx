@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import NotLogged from "./NotLogged";
 import Logged from "./Logged";
@@ -25,7 +26,9 @@ const Header = () => {
   }, [user.id]);
   return (
     <div>
-      <p>TMDB By Mechi</p>
+      <Link to="/">
+        <p>TMDB By Mechi</p>
+      </Link>
       <Search />
       {!user.email ? <NotLogged /> : <Logged />}
     </div>
