@@ -11,6 +11,7 @@ import Register from "./components/Register";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
 import SearchResult from "./components/SearchResult";
+import Details from "./components/Details";
 
 import { setMovieGenres } from "./store/movieGenres";
 import { setTvShowGenres } from "./store/tvShowGenres";
@@ -39,7 +40,6 @@ function App() {
         dispatch(setTvShowGenres(tvShowGenres.data));
       });
   }, []);
-
   return (
     <div className="App">
       <Header />
@@ -49,9 +49,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/searchResults" element={<SearchResult />} />
+        <Route path="/details/:type/:id" element={<Details />} />
         {/* Logged user routes   */}
         <Route path="/myprofile" element={<Profile />} />
-        <Route path="/searchResults" element={<SearchResult />} />
       </Routes>
       <Footer />
     </div>
